@@ -1,5 +1,6 @@
 var express = require('express');
 var usuarioControlador = require('../controllers/usuario-controller');
+
 var api = express();
 api.get('/obtener', usuarioControlador.get);
 api.post('/guardar', usuarioControlador.guardar);

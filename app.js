@@ -11,5 +11,5 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.get('/', (req, resp) => resp.send('test'));
 app.use('/api', usuario_ruta);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 app.listen(PORT,console.log('server inisiado'));
