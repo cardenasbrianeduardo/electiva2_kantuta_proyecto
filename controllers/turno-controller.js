@@ -8,6 +8,7 @@ function obtener(request, response){
     );
     // response.status(200).send("OK");
 }
+
 function guardar(request, response){
     // console.log('Funsionando');
     response.status(200).send("OK");
