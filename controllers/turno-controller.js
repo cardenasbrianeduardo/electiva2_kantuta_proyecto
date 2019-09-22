@@ -1,23 +1,23 @@
 var Turno = require('../models/turno');
 // var bcrypt = require('bcrypt-nodejs');
 
-function obtener(request, response){
+function get(request, response){
     Turno.findAll().then(valor => {
         response.json(valor)
     });
 }
 
-function guardar(request, response){
+function save(request, response){
     // console.log('Funsionando');
     response.status(200).send("OK");
 }
-function actualizar(request, response){
+function update(request, response){
     // console.log('Funsionando');
     response.status(200).send("OK");
 }
-function eliminar(request, response){
+function destroy(request, response){
     // console.log('Funsionando');
     response.status(200).send("OK");
 }
 
-module.exports = {obtener, guardar, actualizar, eliminar};
+module.exports = {get, save, update, destroy};
