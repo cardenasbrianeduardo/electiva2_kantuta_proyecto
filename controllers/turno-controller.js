@@ -1,12 +1,10 @@
 var Turno = require('../models/turno');
+// var bcrypt = require('bcrypt-nodejs');
 
 function obtener(request, response){
-    Turno.findAll().then(
-        Turno => {
-            response.json(turno);
-        }
-    );
-    // response.status(200).send("OK");
+    Turno.findAll().then(valor => {
+        response.json(valor)
+    });
 }
 
 function guardar(request, response){

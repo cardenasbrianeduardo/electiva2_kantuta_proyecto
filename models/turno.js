@@ -1,7 +1,7 @@
 var Sequilize = require('sequelize') ;
 var db = require('../config/database');
 
-var Turno = db.define('Turno', {
+var Turno = db.define('turno', {
     idTurno: {
         type: Sequilize.INTEGER,
         autoIncrement: true,
@@ -13,6 +13,8 @@ var Turno = db.define('Turno', {
     }
 },
 {
+    // freezeTableName, para que tome el nombre de las tablas de m
+    // modo SINGULAR
     freezeTableName: true,
     timestamps: false
     
