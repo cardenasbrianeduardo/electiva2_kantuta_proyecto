@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-module.exports = new Sequelize('kantuta_electiva', 'root', 'brian123', {
+module.exports = new Sequelize('kantuta_electiva', 'root', '1234', {
   host: 'localhost',
   dialect: 'mysql',
   pool: {
