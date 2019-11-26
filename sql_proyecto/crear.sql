@@ -26,6 +26,7 @@ CREATE TABLE horario(
 CREATE TABLE empleado(
     idEmpleado INT PRIMARY KEY AUTO_INCREMENT,
     idCargo INT NOT NULL,
+    idTurnoEmpleado INT,
     ciEmpleado VARCHAR(40) UNIQUE NOT NULL,
     primerNombre VARCHAR(50) NOT NULL,
     segundoNombre VARCHAR(50),

@@ -24,7 +24,7 @@ INSERT INTO cargo(nombre, esFlexible) VALUE ('Marqueting', TRUE);
 INSERT INTO cargo(nombre, esFlexible) VALUE ('Editor', TRUE);
 INSERT INTO cargo(nombre, esFlexible) VALUE ('Publicista', TRUE);
 INSERT INTO cargo(nombre, esFlexible) VALUE ('Vendedor', TRUE);
-    INSERT INTO cargo(nombre, esFlexible) VALUE ('Director de Producción', TRUE);
+INSERT INTO cargo(nombre, esFlexible) VALUE ('Director de Producción', TRUE);
 INSERT INTO cargo(nombre, esFlexible) VALUE ('Asistente de Producción', TRUE);
 INSERT INTO cargo(nombre, esFlexible) VALUE ('Revisor de Juegos', TRUE);
 

@@ -102,3 +102,15 @@ where e.IdEmpleado = h.idEmpleado;
 # SELECT a.fechaHoraIngreso
 # FROM asistencia a
 # WHERE DATE(a.fechaHoraIngreso) = '2019-07-03';
+
+# DELETE c, e, a
+# FROM cargo c
+# LEFT JOIN empleado e on c.idCargo = e.idCargo
+# JOIN asistencia a on e.idEmpleado = a.idEmpleado
+# WHERE e.idEmpleado = 1;
+
+DELETE e
+FROM empleado e JOIN asistencia a on e.idEmpleado = a.idEmpleado
+WHERE e.idEmpleado = 1;
+
+# JOIN empleado e on c.idCargo = e.idCargo;
